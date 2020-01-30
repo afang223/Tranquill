@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#canvas1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #130C3B;
+    z-index: -1;
+}
+#title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway';
+    font-size: 10vh;
+    color: #D593D0;
+}
+.play {
+    width: 0;
+    height: 0;
+    border-top: 6vh solid transparent;
+    border-left: 10vh solid #D593D0;
+    border-bottom: 6vh solid transparent;
+}
+.pause {
+    width: 4vh;
+    height: 10vh;
+    border-right: 2vh solid #D593D0;
+    border-left: 2vh solid #D593D0;
+}
+
+.circle{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 50%;
+    border: 2vh solid #D593D0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#playPause{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#playPause:hover{
+    cursor: pointer;
+}
+
+.one{
+    animation: pulse 2s ease-in 0s infinite;
+}
+
+.two{
+    animation: pulse 2s ease-in 1s infinite;
+}
+
+.circle:hover{
+    cursor: pointer;
+}
+
+@keyframes pulse{
+    from {height: 18vh;
+        width: 18vh;
+        opacity: 1;}
+        to{
+            height: 40vh;
+            width: 40vh;
+        opacity: 0;}
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}

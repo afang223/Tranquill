@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tranquill</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src = "assets/script.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "assets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body onload = "fade()">
+        <div id = "page">
+            <div id ="loadingPage">
+                <div id = "title">Tranquill</div>
+                <div id = "loader">
+                    <div class = "circles one"></div>
+                    <div class = "circles two"></div>
+                    <div class = "circles three"></div>
+                    <div class = "circles four"></div>
+                    <div class = "circles five"></div>
+                </div>
+            </div>
+            <div id = "mainPage" >
+                <div id = "titleMain">Tranquill</div>
+
+                <div id = "carousel">
+                    <div id = "previous" onclick = "previous()"></div>
+                    <a href = "lofi/lofi.html" id = "link">
+                        <img src = "assets/images/cards/lofi.png" id = "image">
+                    </a>
+                    <div id = "next" onclick = "next()"></div>
+                </div>       
+                
+                <div id = "caption">Pick a sound</div>
+            </div>
+        </div>
+    </body>
+</html>

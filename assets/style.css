@@ -1,0 +1,187 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway';
+}
+
+#page{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+}
+#loadingPage{
+    height: 100vh;
+    width: 100vw;
+    background-color: #8CB7FF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-family: 'Raleway';
+    font-size: 15vh;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes wave {
+	0% {
+	  transform: translateY(0);
+	}
+	30% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-5vh);
+	}
+	70% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+#loader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    height: 5vh;
+    margin-top: 15vh;
+}
+
+#loader .circles{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 2.5vh;
+    background-color: white;
+    animation: wave 2s 2;
+}
+
+#loader .circles.two{
+    animation-delay: 0.25s;
+}
+
+#loader .circles.three{
+    animation-delay: 0.5s;
+}
+
+#loader .circles.four{
+    animation-delay: 0.75s;
+}
+
+#loader .circles.five{
+    animation-delay: 1s;
+}
+
+#mainPage{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleMain{
+    color:#8CB7FF;
+    margin-bottom: 5vh;
+    font-size: 7vh;
+}
+
+#caption{
+  color:#8CB7FF;
+  font-style:italic;
+  font-size: 3vh;
+  opacity: 0.7;
+  margin-top: 1vh;
+}
+
+#image{
+  box-shadow: 0 2vh 5vh 0 rgba(0, 0, 0, 0.2), 0 2vh 7vh 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  width: auto;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#link{
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+/* CAROUSSSELELELELELELLELLLELLLELLELLELLELL */
+#carousel{
+  height: 52vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#next:hover{
+  cursor: pointer;
+}
+
+#previous:hover{
+  cursor: pointer;
+}
+
+#next {
+  width: 0;
+  height: 0;
+  border-top: 3vh solid transparent;
+  border-left: 5vh solid #8CB7FF;
+  border-bottom: 3vh solid transparent;
+  opacity: 0.5;
+}
+
+#next:hover{
+  opacity: 1;
+}
+
+#previous {
+  width: 0;
+  height: 0;
+  border-top: 3vh solid transparent;
+  border-right: 5vh solid #8CB7FF;
+  border-bottom: 3vh solid transparent;
+  opacity: 0.5;
+}
+
+#previous:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+

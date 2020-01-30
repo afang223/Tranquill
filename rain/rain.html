@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tranquill</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script src = "script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <audio id = "music">
+            <source src = "rain.mp3" type = "audio/mp3">
+        </audio>
+        <div id = "title">Tranquill</div>
+        <div>
+            <div class = "circle" id = "first"></div>
+            <div class = "circle" id = "second">
+            </div>
+            <div class = "play" id = "playPause"  onclick = "playPause()" onmouseover = "pulse()" onmouseout = "nopulse()"></div>
+        </div>
+        <canvas id = "canvas1"></canvas>
+        <script src = "rainparticles.js"></script>
+    </body>
+</html>
